@@ -2,7 +2,7 @@
 
 read -p "
 Enter 1 if generating for Userge-X bot.
-Enter 2 for latest pyrogram.
+Enter 2 for Pyrogram V2.
 *** DO NOT enter 2 if generating for Userge-X. ***
 
 >>> " pyroV
@@ -12,8 +12,8 @@ if [[ $pyroV == 1 ]]; then
   pip -q install pyrogram==1.4.7
   echo -e " -Done \n"
 elif [[ $pyroV == 2 ]]; then
-  echo -e "\nInstalling latest pyrogram"
-  pip -q install -U pyrogram
+  echo -e "\nInstalling Pyrogram V2."
+  pip -q install pyrogram==2.0.57
   echo -e " - Done \n"
 else
   echo -e "\nWrong Input, run \`bash gen\` again.
