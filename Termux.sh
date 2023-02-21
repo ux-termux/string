@@ -17,10 +17,6 @@ if [ $HOME == "/data/data/com.termux/files/home" ]; then
     apt -qq update -y 2> /dev/null /dev/null
     apt -qq upgrade -y 2> /dev/null /dev/null
     echo -e "- Done"
-    echo -e "Installing Python"
-    apt -qq install -y git python python-pip 2> /dev/null /dev/null
-    pip install -q -U setuptools wheel tgcrypto
-    echo -e "- Done"
   else
     echo -e "Termux from Playstore not supported.\n(⁠ノ⁠ಠ⁠益⁠ಠ⁠)⁠ノ"
     exit
@@ -29,6 +25,11 @@ else
   echo -e "Not a termux env
   \nInstall python, pip, git and then run command again if next part fails."
 fi
+
+echo -e "Installing Python"
+apt install -y git python python-pip
+pip install -q -U setuptools wheel tgcrypto
+echo -e "- Done"
 
 echo -e "3.Clonning String Repo"
 if [ -d "string" ]; then 
