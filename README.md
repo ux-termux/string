@@ -1,2 +1,2 @@
 ### Pyrogram String generator 
-Telegram - @UsergeXForkUpdates
+Telegram - [@UsergeXForkUpdates](https://t.me/UsergeXForkUpdates)
