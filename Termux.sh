@@ -9,9 +9,8 @@ string(){
 if [ $HOME == "/data/data/com.termux/files/home" ]; then
   if [ $TERMUX_APK_RELEASE == "F_DROID" ]; then
     echo -e "1.Updating packages"
-    echo -e "Change default termux mirror to Single North America.
-    \nEntering Termux mirror menu in 10 sec."
-    sleep 10
+    echo -e "Change default termux mirror to Single North America."
+    read -p Press Enter to proceed"
     termux-change-repo
     yes|pkg upgrade 2> /dev/null /dev/null
     apt -qq update -y 2> /dev/null /dev/null
