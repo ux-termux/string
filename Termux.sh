@@ -42,7 +42,7 @@ install_py(){
 start_gen(){
     clear
     echo -e "4. Fetching Generator script."
-    python -c "$(curl -fsSL https://raw.githubusercontent.com/ux-termux/string/main/gen.py)"
+    python3 -c "$(curl -fsSL https://raw.githubusercontent.com/ux-termux/string/main/gen.py)"
 }
 
 options(){
