@@ -10,10 +10,10 @@ Enter 2 for Pyrogram V2.
 while True:
     inp = input("> ")
     if inp in [1, "1"]:
-        subprocess.call("pip install pyrogram==1.4.7", shell=True)
+        subprocess.call("python3 -m pip install pyrogram==1.4.7", shell=True)
         break
     elif inp in [2, "2"]:
-        subprocess.call("pip install pyrogram==2.0.57", shell=True)
+        subprocess.call("python3 -m pip install pyrogram==2.0.57", shell=True)
         break
     else:
         print("Wrong Input\nTry Again.")
