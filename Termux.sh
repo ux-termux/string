@@ -35,7 +35,7 @@ install_py(){
         apt install -y python3 python3-pip
     fi
     echo -e "Installing Pypi packages."
-    pip install -q -U setuptools wheel tgcrypto
+    python3 -m pip install -q -U setuptools wheel tgcrypto
     echo -e "- Done"
 }
 
