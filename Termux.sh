@@ -2,7 +2,7 @@
 
 welcome(){
     if [ $HOME == "/data/data/com.termux/files/home" ]; then
-        if ! [ $TERMUX_APK_RELEASE == "F_DROID" ]; then
+        if ! [ "$TERMUX_APK_RELEASE" == "F_DROID" ] && ! [ "$TERMUX_APK_RELEASE" == "GITHUB" ] ; then
             echo -e "Termux from Playstore not supported.\n(⁠ノ⁠ಠ⁠益⁠ಠ⁠)⁠ノ"
             exit
         fi
