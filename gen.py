@@ -13,7 +13,7 @@ while True:
         subprocess.call("python3 -m pip install pyrogram==1.4.7", shell=True)
         break
     elif inp in [2, "2"]:
-        subprocess.call("python3 -m pip install pyrogram==2.0.57", shell=True)
+        subprocess.call("python3 -m pip install -U pyrogram", shell=True)
         break
     else:
         print("Wrong Input\nTry Again.")
