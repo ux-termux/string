@@ -2,8 +2,9 @@
 
 welcome(){
     if [ $HOME == "/data/data/com.termux/files/home" ]; then
-        if ! [ "$TERMUX_APK_RELEASE" == "F_DROID" ] && ! [ "$TERMUX_APK_RELEASE" == "GITHUB" ] ; then
+        if ! [ "$TERMUX_APK_RELEASE" == "F_DROID" ] && ! [ "$TERMUX_APK_RELEASE" == "GITHUB" ] && ! [ "$TERMUX_APP__APK_RELEASE" == "GITHUB" ]; then
             echo -e "Termux from Playstore not supported.\n(⁠ノ⁠ಠ⁠益⁠ಠ⁠)⁠ノ"
+            echo  "use 'export TERMUX_APK_RELEASE=F_DROID' and run script again if you want to force proceed."
             exit
         fi
         termux_env=true
